@@ -66,7 +66,7 @@ class CSVtoJSON
             WriteIndented = true,
             PropertyNamingPolicy = JsonNamingPolicy.CamelCase
         };
-
+        
         if (args.Length == 0)
         {
             Console.WriteLine("Usage: CSVtoJSON <input-file-path>");

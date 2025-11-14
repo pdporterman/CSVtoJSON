@@ -12,3 +12,4 @@ C:\Users\pdpor\Desktop\PersonalProjects\TestProjects\CSVtoJSON\obj\Debug\net9.0\
 C:\Users\pdpor\Desktop\PersonalProjects\TestProjects\CSVtoJSON\obj\Debug\net9.0\CSVtoJSON.pdb
 C:\Users\pdpor\Desktop\PersonalProjects\TestProjects\CSVtoJSON\obj\Debug\net9.0\CSVtoJSON.genruntimeconfig.cache
 C:\Users\pdpor\Desktop\PersonalProjects\TestProjects\CSVtoJSON\obj\Debug\net9.0\ref\CSVtoJSON.dll
+C:\Users\pdpor\Desktop\PersonalProjects\TestProjects\CSVtoJSON\obj\Debug\net9.0\CSVtoJSON.sourcelink.json

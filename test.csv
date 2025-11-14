@@ -1,0 +1,30 @@
+customer_id,first_name,last_name,email,phone_number,address,city,state,postal_code,car_make,car_model,car_year,license_plate,purchase_date,purchase_price
+1,John,Doe,john.doe@example.com,555-123-4567,123 Maple St,Denver,CO,80205,Ford,Focus,2015,ABC123,03/15/2021,15000.50
+2,Jane,Smith,jane.smith@example.net,555-987-6543,47 Oak Rd,Seattle,WA,98101,Toyota,Corolla,2020,123ABC,07/22/2022,18000.00
+3,Bob,Adams,bob.adams@example.com,555-222-3333,89 Pine Ln,Austin,TX,73301,Honda,Civic,2018,BCA321,11/10/2020,16500.75
+4,Alice,Brown,alicebrown@example.com,555-444-5555,55 Cedar Ave,Miami,FL,33101,Chevy,Malibu,2019,XYZ789,02/05/2023,22000
+5,Mike,Clark,mike.clark@example.com,555-555-5555,12 Birch St,Chicago,IL,60601,Nissan,Altima,2022,456DEF,06/30/2021,19500.99
+0,Invalid,Customer,bademail.com,555-111-2222,1 Fake St,Nowhere,ZZ,ABCDE,Ford,Taurus,1999,AAA111,01/01/1990,12000.0
+10,Sarah,Lee,sarah.lee@sample.org,555-888-9999,98 Elm St,Portland,OR,97201,Subaru,Outback,2017,789GHI,09/10/2020,17500
+11,Tom,White,tom.white@example.com,555-123-9999,76 Market St,Boston,MA,02108,BMW,330i,2021,JKL456,12/12/2023,35000
+12,Emily,Green,emily.green@mail.com,555-444-1111,34 Lakeview Dr,Salem,OR,97301,Tesla,Model 3,2023,321JKL,01/20/2024,39999.99
+13,David,Hunt,invalid@com,555-222-0000,11 River Rd,Boise,ID,83701,Ford,Fiesta,2016,ZZZ999,13/40/2022,14000
+14,Linda,King,linda.king@example.com,555-111-3333,222 Brook St,Billings,MT,59101,Honda,Accord,2025,987ABC,05/05/2025,27000.00
+15,George,Young,georgeyoung@example.com,555-777-6666,765 Farm Rd,Tulsa,OK,74101,Ford,Explorer,2014,233FGH,11/11/2019,21000.90
+16,Nancy,Hall,nancy.hall@example.com,555-000-1111,54 Grove St,Richmond,VA,23219,Chevy,Impala,2005,HIJ234,04/04/2010,8800
+17,Peter,Scott,peter.scott@example.com,555-333-4444,87 Hill St,Columbus,OH,43004,Toyota,Camry,2013,654XYZ,10/10/2020,13000.40
+18,Karen,Moore,karen.moore@example.com,555-123-0000,45 Meadow Ln,Omaha,NE,68101,Ford,Escape,2012,LMN987,08/08/2019,12500
+19,Invalid,TooManyDigits,valid@example.com,555-111-2222,99 Thirty St,Orlando,FL,123456,Nissan,Rogue,2020,QWE456,06/01/2020,22000
+20,Jason,Bates,jason.bates@example.com,555-222-3333,88 Ridge Rd,Sacramento,CA,94203,Honda,CRV,2008,WER654,02/28/2014,9200
+21,Elaine,Rogers,elaine.rogers@example.com,555-444-7777,13 Cherry St,Helena,MT,59601,Toyota,RAV4,2010,POI987,03/15/2018,11000
+22,Chris,Walker,chris.walker@example.com,555-666-8888,51 Valley Rd,Fresno,CA,93701,BMW,X5,2016,QAZ123,07/07/2020,25000
+23,Hannah,James,hannah.james@example.com,555-999-1111,300 Ocean Dr,Tampa,FL,33601,Mercedes,C300,2021,ABC999,04/14/2021,41000.45
+-2,Negative,ID,neg@example.com,555-222-4444,1 Bad Id St,Salt Lake City,UT,84101,Ford,F150,2011,123CCC,03/03/2015,15000
+24,Ian,Stone,ian.stone@example.com,555-444-5555,5 Bridge St,Mobile,AL,36601,Chevy,Cruze,2015,LLL222,06/06/2016,10500
+25,Kate,Reed,kate.reed@example.com,555-555-0000,21 Forest Rd,Atlanta,GA,30301,Kia,Sorento,2017,222AAA,05/22/2018,16000
+26,Luke,Perry,luke.perry@example.com,ABC-123-9999,45 WrongPhone Rd,Raleigh,NC,27601,Honda,Pilot,2018,123LLL,07/01/2020,28000
+27,Zoe,Cook,zoe.cook@example.com,555-777-8888,87 Lake St,Provo,UT,84601,Nissan,Sentra,2012,ABC12,08/18/2017,9900
+28,Victor,Gill,victor.gill@example.com,555-001-0022,74 Rural St,Bozeman,MT,59715,Ford,Mustang,1965,OLD123,09/22/2010,35000
+29,Will,Sharp,will.sharp@example.com,555-333-6666,11 Hunter St,Boulder,CO,80301,Toyota,Tundra,2024,NEW789,12/31/2024,48000.00
+30,Invalid,Email,not-an-email,555-444-3333,14 Error Rd,Dallas,TX,75201,Kia,Rio,2013,ABC321,10/10/2015,8000
+31,Paula,Stone,paula.stone@example.com,555-888-2222,90 Circle St,Tucson,AZ,85701,Ford,Edge,2020,STU456,01/01/2021,22000
