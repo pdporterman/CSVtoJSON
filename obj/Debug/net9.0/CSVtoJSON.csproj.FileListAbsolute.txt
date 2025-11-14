@@ -1,0 +1,14 @@
+C:\Users\pdpor\Desktop\PersonalProjects\TestProjects\CSVtoJSON\bin\Debug\net9.0\CSVtoJSON.exe
+C:\Users\pdpor\Desktop\PersonalProjects\TestProjects\CSVtoJSON\bin\Debug\net9.0\CSVtoJSON.deps.json
+C:\Users\pdpor\Desktop\PersonalProjects\TestProjects\CSVtoJSON\bin\Debug\net9.0\CSVtoJSON.runtimeconfig.json
+C:\Users\pdpor\Desktop\PersonalProjects\TestProjects\CSVtoJSON\bin\Debug\net9.0\CSVtoJSON.dll
+C:\Users\pdpor\Desktop\PersonalProjects\TestProjects\CSVtoJSON\bin\Debug\net9.0\CSVtoJSON.pdb
+C:\Users\pdpor\Desktop\PersonalProjects\TestProjects\CSVtoJSON\obj\Debug\net9.0\CSVtoJSON.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pdpor\Desktop\PersonalProjects\TestProjects\CSVtoJSON\obj\Debug\net9.0\CSVtoJSON.AssemblyInfoInputs.cache
+C:\Users\pdpor\Desktop\PersonalProjects\TestProjects\CSVtoJSON\obj\Debug\net9.0\CSVtoJSON.AssemblyInfo.cs
+C:\Users\pdpor\Desktop\PersonalProjects\TestProjects\CSVtoJSON\obj\Debug\net9.0\CSVtoJSON.csproj.CoreCompileInputs.cache
+C:\Users\pdpor\Desktop\PersonalProjects\TestProjects\CSVtoJSON\obj\Debug\net9.0\CSVtoJSON.dll
+C:\Users\pdpor\Desktop\PersonalProjects\TestProjects\CSVtoJSON\obj\Debug\net9.0\refint\CSVtoJSON.dll
+C:\Users\pdpor\Desktop\PersonalProjects\TestProjects\CSVtoJSON\obj\Debug\net9.0\CSVtoJSON.pdb
+C:\Users\pdpor\Desktop\PersonalProjects\TestProjects\CSVtoJSON\obj\Debug\net9.0\CSVtoJSON.genruntimeconfig.cache
+C:\Users\pdpor\Desktop\PersonalProjects\TestProjects\CSVtoJSON\obj\Debug\net9.0\ref\CSVtoJSON.dll
