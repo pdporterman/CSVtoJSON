@@ -3,6 +3,8 @@
 using System.Text.RegularExpressions;
 using System.Text.Json;
 using System.Text.Json.Serialization;
+using System.Collections.Concurrent;
+using System.Threading.Tasks;
 
 
 // object to turn valid row to JSON
@@ -66,18 +68,68 @@ class CSVtoJSON
             WriteIndented = true,
             PropertyNamingPolicy = JsonNamingPolicy.CamelCase
         };
-        
+
         if (args.Length == 0)
         {
             Console.WriteLine("Usage: CSVtoJSON <input-file-path>");
             return;
         }
+
         string infile = args[0];
+        int threads = args.Length > 1 ? int.Parse(args[1]) : 3;
+        string outfile = args.Length > 2 ? args[2] : "output.json";
+
         string[] lines = File.ReadAllLines(infile);
-        List<CustomerRecord> validLines = findValid(lines);
+
+        List<CustomerRecord> validLines = findValidParallel(lines, threads);
+
         string json = JsonSerializer.Serialize(validLines, jsonOptions);
-        string outfile = args.Length > 1 ? args[1] : "output.json";
+
         File.WriteAllText(outfile, json);
+    }
+
+    // this is a version of the findValid funtion that instead of a for loop uses Parallel.For
+    // this breaks the task down into individual threads for us while not exceding the computers avaible resources 
+    // or going over the set threads we provided in the argument
+    private static List<CustomerRecord> findValidParallel(string[] lines, int threads)
+    {
+        var validRows = new ConcurrentBag<CustomerRecord>();
+
+        Parallel.For(1, lines.Length, new ParallelOptions
+        {
+            MaxDegreeOfParallelism = threads
+        }, i =>
+        {
+            string line = lines[i];
+            var fields = line.Split(',');
+
+            // reuse your logic exactly as-is
+            if (fields.Length != 15)
+            {
+                lock (Console.Out)
+                    Console.WriteLine($"Row {i}: Invalid number of columns ({fields.Length})");
+                return;
+            }
+
+            List<string> errors = ValidateRow(fields);
+
+            if (errors.Count > 0)
+            {
+                lock (Console.Out)
+                {
+                    foreach (var err in errors)
+                        Console.WriteLine($"Row {i}: {err}");
+                }
+                return;
+            }
+
+            // reuse ParseValidRecord unchanged
+            CustomerRecord record = ParseValidRecord(fields);
+
+            validRows.Add(record);
+        });
+
+        return validRows.ToList();
     }
 
     // findValid goes through all the lines from the CSV and split it so that each of the colums content can be viewed
@@ -167,8 +219,7 @@ class CSVtoJSON
         return errors;
     }
 
-
-    // functions that test for the diffrent possible errors described in the spec returning a bool true if pass, false if fail
+    // functions that test for the diffrent possible errors described in the spec returning a bool true if pass, false if fail,
     static bool ValidatePositiveInt(string s)
     {
         return int.TryParse(s, out int n) && n > 0;
