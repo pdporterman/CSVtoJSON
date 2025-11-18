@@ -81,7 +81,7 @@ class CSVtoJSON
 
         string[] lines = File.ReadAllLines(infile);
 
-        List<CustomerRecord> validLines = findValidParallel(lines, threads);
+        List<CustomerRecord> validLines = threads > 1 ? findValidParallel(lines, threads) : findValid(lines);
 
         string json = JsonSerializer.Serialize(validLines, jsonOptions);
 

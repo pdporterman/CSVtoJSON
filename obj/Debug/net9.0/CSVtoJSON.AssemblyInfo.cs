@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CSVtoJSON")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+104166a6239abb221e37b9dcf1226a6aa311ab5e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3f152c99f1edfc492bb612ff3ab0430a0dbbeb3c")]
 [assembly: System.Reflection.AssemblyProductAttribute("CSVtoJSON")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CSVtoJSON")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
